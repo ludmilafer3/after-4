@@ -1,15 +1,13 @@
-.parrafo-contacto {
+.parrafo-contacto{
     text-align: center;
     margin-top: $espaciado-general * 2;
 }
 
-.main-contacto {
+.main-contacto{
     @include flex-columna;
     gap: $espaciado-general * 2;
-}
 
-@media (min-width: $tablet) {
-    .main-contacto {
+    @media (min-width: $tablet){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -17,27 +15,26 @@
     }
 }
 
-iframe {
+iframe{
     max-width: 100%;
 }
 
-form {
+form{
     @include flex-columna;
     gap: $espaciado-general;
 
     /*anidacion 1*/
-    .campos {
+    .campos{ 
         @include flex-columna;
     }
 
-    /*anidacion 2*/
     .botones-form {
         @extend .boton;
         background-color: $color-secundario;
         font-weight: bold;
-        transition: ease-in .4s;
+        transition: ease-in 2s;
 
-        &:hover {
+        &:hover{
             background-color: $color-primario;
             color: $color-secundario;
         }

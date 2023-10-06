@@ -1,73 +1,69 @@
-body {
+body{
     font-family: $fuente-principal;
     background-color: $color-primario;
     color: $color-secundario;
 }
 
-.nav-link {
+.nav-link{
     color: $color-secundario;
 
-    &:hover {
-        color: yellow;
+    &:hover{
+        color: $color-terciario;
     }
 }
 
-.nav-link.active {
+.nav-link.active{
     color: $color-secundario;
-    background-color: yellow;
+    background-color: $color-terciario;
 }
 
-.navbar-toggler {
+.navbar-toggler{
     background-color: $color-terciario;
     margin-bottom: $espaciado-general + 10px;
 }
 
-.carousel-item img {
+.carousel-item img{
     height: 250px;
-}
 
-@media (min-width: $tablet) {
-    .carousel-item img {
+    @media (min-width: $tablet){
         height: 70vh;
     }
-}
 
-@media (min-width: $desktop) {
-    .carousel-item img {
+    @media (min-width: $desktop){
         height: 80vh;
     }
-}
 
-@media (min-width: $desktopXG) {
-    .carousel-item img {
+    @media (min-width: $desktopXG){
         height: 90vh;
     }
 }
 
-h1, h2 {
+h1,h2{
     text-align: center;
     margin-top: $espaciado-general * 2;
 }
 
-p {
+p{
     font-size: $fuente-media;
 }
 
-footer {
+footer{
     margin-top: $espaciado-general * 3;
     @include flex-columna;
 
     /*anidacion*/
-    .container-redes a {
+    .container-redes a{
         color: $color-terciario;
         text-decoration: none;
         font-size: $icono;
     }
+
 }
 
-.boton {
+.boton{
     border: solid 1px $color-secundario;
     width: 200px;
     text-align: center;
-    padding: 5px $espaciado-general;
+    padding: 5px $espaciado-general;    
 }
+

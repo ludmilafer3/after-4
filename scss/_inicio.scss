@@ -1,36 +1,38 @@
-.contenedor-banner {
+.contenedor-banner{
     @include flex-columna;
     gap: $espaciado-general;
-}
 
-@media (min-width: 768px) {
-    .contenedor-banner {
+    
+    @media (min-width: $tablet){
         flex-direction: row;
         gap: $espaciado-general * 3;
     }
 }
 
-.banner-uno, .banner-dos, .banner-tres {
+
+.banner-uno, .banner-dos, .banner-tres{
     @include flex-columna;
 
-    iconify-icon {
+    iconify-icon{
         font-size: $icono + 20px;
     }
 
-    p {
+    p{
         text-align: center;
     }
 }
 
-.enlace-contacto {
+.enlace-contacto{
+
     @extend .boton;
     text-decoration: none;
     color: $color-primario;
     background-color: $color-terciario;
     transition: all .3s;
 
-    &:hover {
+    &:hover{
         background-color: $color-primario;
         color: $color-terciario;
     }
+
 }

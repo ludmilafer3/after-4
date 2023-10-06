@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*PALETA DE COLORES*/
+/*FUENTE PRINCIPAL*/
+/*TAMAÑOS DE FUENTES*/
+/*RESOLUCIONES DE PANTALLAS*/
+/*ESPACIADOS. MARGIN Y PADDING*/
+/*MIXINS*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  color: #b2b2b2;
+}
+
+.nav-link {
+  color: #b2b2b2;
+}
+.nav-link:hover {
+  color: yellow;
+}
+
+.nav-link.active {
+  color: #b2b2b2;
+  background-color: yellow;
+}
+
+.navbar-toggler {
+  background-color: yellow;
+  margin-bottom: 30px;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*anidacion*/
+}
+footer .container-redes a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.boton, form .botones-form, .enlace-contacto {
+  border: solid 1px #b2b2b2;
+  width: 200px;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.contenedor-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor-banner {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+.banner-uno, .banner-dos, .banner-tres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-uno iconify-icon, .banner-dos iconify-icon, .banner-tres iconify-icon {
+  font-size: 60px;
+}
+.banner-uno p, .banner-dos p, .banner-tres p {
+  text-align: center;
+}
+
+.enlace-contacto {
+  text-decoration: none;
+  color: #000;
+  background-color: yellow;
+  transition: all 0.3s;
+}
+.enlace-contacto:hover {
+  background-color: #000;
+  color: yellow;
+}
+
+.parrafo-contacto {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+iframe {
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /*anidacion 1*/
+  /*anidacion 2*/
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .botones-form {
+  background-color: #b2b2b2;
+  font-weight: bold;
+  transition: ease-in 0.4s;
+}
+form .botones-form:hover {
+  background-color: #000;
+  color: #b2b2b2;
+}
+
+/*# sourceMappingURL=styles.css.map */

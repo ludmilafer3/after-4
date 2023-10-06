@@ -1,0 +1,36 @@
+.contenedor-banner {
+    @include flex-columna;
+    gap: $espaciado-general;
+}
+
+@media (min-width: 768px) {
+    .contenedor-banner {
+        flex-direction: row;
+        gap: $espaciado-general * 3;
+    }
+}
+
+.banner-uno, .banner-dos, .banner-tres {
+    @include flex-columna;
+
+    iconify-icon {
+        font-size: $icono + 20px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.enlace-contacto {
+    @extend .boton;
+    text-decoration: none;
+    color: $color-primario;
+    background-color: $color-terciario;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-terciario;
+    }
+}
